@@ -233,10 +233,6 @@ int main(int argc, char *argv[])
 	// start capture mode
 	// equivalent to start capture from the original
 	listener.startCapture(&captureFlag);
-	if (!captureFlag) {
-		listener.stopCapture(&captureFlag);
-		return 1;
-	}
 
 	// stop capture mode
 	// equivalent to start capture from the original
